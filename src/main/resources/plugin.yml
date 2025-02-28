@@ -1,0 +1,4 @@
+name: TransferPlugin
+version: '1.0-SNAPSHOT'
+main: com.dev.transferPlugin.TransferPlugin
+api-version: '1.20'
