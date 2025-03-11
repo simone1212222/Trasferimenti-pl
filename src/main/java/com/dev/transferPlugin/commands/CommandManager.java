@@ -7,19 +7,13 @@ public class CommandManager {
 
     private final TransferPlugin plugin;
 
-    public CommandManager(final TransferPlugin plugin) {
+    public CommandManager(TransferPlugin plugin) {
         this.plugin = plugin;
     }
 
     public void registerCommands() {
-        // Register commands
-    }
-
-    private void registerCommand(String commandName, CommandExecutor executor) {
-        if (plugin.getCommand(commandName) != null) {
-            plugin.getCommand(commandName).setExecutor(executor);
-        } else {
-            plugin.getLogger().warning("Command " + commandName + " not found in plugin.yml!");
-        }
+        plugin.getCommand("trasferisci").setExecutor(new TrasferisciCommand(plugin));
+        //plugin.getCommand("resettrasferisci").setExecutor(new ResetTrasferisciCommand(plugin));
+        plugin.getCommand("transferconfirm").setExecutor(new TransferConfirmCommand(plugin));
     }
 }

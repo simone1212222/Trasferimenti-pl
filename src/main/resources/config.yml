@@ -1,0 +1,23 @@
+# Configurazione del database
+database:
+  host: "localhost"  # Database host
+  port: 3306         # Database port
+  name: "transfer_db" # Database name
+  username: "transfer_user"    # Database username
+  password: "transfer_password" # Database password
+
+# Messaggi
+messages:
+  command-player-only: "&cSolo i player possono fare questo comando."
+  gui-opened: "&aHai aperto la GUI di trasferimento!"
+  gui-closed: "&aHai chiuso la GUI. Gli oggetti sono stati salvati."
+  command-disabled: "&cNon puoi più usare il comando /trasferisci."
+  no-permission: "&cNon hai il permesso per usare questo comando."
+  transfer-success: "&aI tuoi oggetti sono stati registrati con successo."
+  transfer-confirmed: "&aTransfer confermato."
+  transfer-cancelled: "&cTransfer cancellato."
+  no-pending-confirmation: "&cUsa /trasferisci prima."
+
+# Plugin Transfer
+transfer:
+  confirmation-time: 30 # Tempo in secondi per confermare il trasferimento

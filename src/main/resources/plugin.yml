@@ -4,4 +4,21 @@ main: com.dev.transferPlugin.TransferPlugin
 api-version: '1.20'
 commands:
   trasferisci:
-
+    description: Apre la GUI per trasferire gli oggetti.
+    usage: /trasferisci
+    permission: transferplugin.use
+  resettrasferisci:
+    description: Resetta l'accesso al comando /trasferisci per un giocatore.
+    usage: /resettrasferisci <player>
+    permission: transferplugin.reset
+  transferconfirm:
+    description: Conferma il trasferimento degli oggetti.
+    usage: /transfer confirm
+    permission: transferplugin.use
+permissions:
+  transferplugin.use:
+    description: Permesso per usare il comando /trasferisci.
+    default: true
+  transferplugin.reset:
+    description: Permesso per usare il comando /resettrasferisci.
+    default: op
